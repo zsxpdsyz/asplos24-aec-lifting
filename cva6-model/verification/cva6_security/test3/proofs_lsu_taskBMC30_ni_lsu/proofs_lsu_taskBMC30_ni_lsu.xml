@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="194">
+<testsuite disabled="0" errors="0" failures="1" name="proofs_lsu" skipped="0" tests="1" time="194">
+<properties>
+<property name="os" value="posix"/>
+</properties>
+<testcase classname="proofs_lsu" name="taskBMC30_ni_lsu" status="FAIL" time="194">
+<failure message="FAIL" type="FAIL"/>
+<system-out>SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Removing directory 'proofs_lsu_taskBMC30_ni_lsu'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'cva6_lsu_formal.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/cva6_lsu_formal.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'load_store_unit.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/load_store_unit.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'shift_reg.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/shift_reg.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'store_unit.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/store_unit.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'store_buffer.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/store_buffer.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'amo_buffer.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/amo_buffer.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'load_unit.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/load_unit.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'lsu_bypass.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/lsu_bypass.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'cva6_processor_shim.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/cva6_processor_shim.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] Copy 'cva6_lsu_shim.v' to 'proofs_lsu_taskBMC30_ni_lsu/src/cva6_lsu_shim.v'.
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] engine_0: smtbmc boolector
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] base: starting process &quot;cd proofs_lsu_taskBMC30_ni_lsu/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Replacing memory \regfile with list of registers. See cva6_processor_shim.v:239, cva6_processor_shim.v:234
+SBY  4:15:03 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Replacing memory \mem with list of registers. See cva6_processor_shim.v:234, cva6_processor_shim.v:228
+SBY  4:15:04 [proofs_lsu_taskBMC30_ni_lsu] base: cva6_lsu_shim.v:0: Warning: System task `$display' outside initial block is unsupported.
+SBY  4:15:04 [proofs_lsu_taskBMC30_ni_lsu] base: load_store_unit.v:205: Warning: Range [33:0] select out of bounds on signal `\icache_areq_i': Setting 1 MSB bits to undef.
+SBY  4:15:04 [proofs_lsu_taskBMC30_ni_lsu] base: load_store_unit.v:218: Warning: Range [33:12] select out of bounds on signal `\mmu_vaddr': Setting 2 MSB bits to undef.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire $paramod$67c83b80e65efc3d4bd3ea7b23a3042e3ffb60e8\load_unit.\req_port_o [10] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\ready_o is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [133] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [132] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [131] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [130] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [129] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [128] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [97] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [96] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [95] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [94] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [93] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [92] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [91] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [90] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [89] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [88] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [87] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [86] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [85] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [84] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [83] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [82] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [81] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [80] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [79] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [78] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [77] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [76] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [75] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [74] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [73] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [72] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [71] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [70] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [69] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [68] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [67] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [66] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [65] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [64] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [31] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [30] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [29] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [28] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [27] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [26] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [25] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [24] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [23] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [22] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [21] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [20] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [19] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [18] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [17] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [16] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [15] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [14] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [13] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [12] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [11] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [10] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [9] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [8] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [7] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [6] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [5] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [4] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [3] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [2] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [1] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_req_o [0] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire amo_buffer.\amo_valid is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [31] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [30] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [29] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [28] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [27] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [26] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [25] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [24] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [23] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [22] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [21] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [20] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [19] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [18] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [17] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [16] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [15] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [14] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [13] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [12] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [11] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [10] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [9] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [8] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [7] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [6] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [5] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [4] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [3] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [2] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [1] is used but has no driver.
+SBY  4:15:06 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire cva6_lsu_shim.\dummy_data [0] is used but has no driver.
+SBY  4:15:08 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire load_store_unit.\dcache_req_ports_o [10] is used but has no driver.
+SBY  4:15:09 [proofs_lsu_taskBMC30_ni_lsu] base: Warning: Wire store_buffer.\req_port_o [10] is used but has no driver.
+SBY  4:15:19 [proofs_lsu_taskBMC30_ni_lsu] base: finished (returncode=0)
+SBY  4:15:19 [proofs_lsu_taskBMC30_ni_lsu] smt2: starting process &quot;cd proofs_lsu_taskBMC30_ni_lsu/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  4:15:19 [proofs_lsu_taskBMC30_ni_lsu] smt2: finished (returncode=0)
+SBY  4:15:19 [proofs_lsu_taskBMC30_ni_lsu] engine_0: starting process &quot;cd proofs_lsu_taskBMC30_ni_lsu; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 30  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY  4:15:20 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:00  Solver: boolector
+SBY  4:15:21 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY  4:15:21 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:01  Checking assertions in step 0..
+SBY  4:15:22 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:02  Checking assumptions in step 1..
+SBY  4:15:22 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:02  Checking assertions in step 1..
+SBY  4:15:24 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:03  Checking assumptions in step 2..
+SBY  4:15:24 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:03  Checking assertions in step 2..
+SBY  4:15:25 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:05  Checking assumptions in step 3..
+SBY  4:15:25 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:05  Checking assertions in step 3..
+SBY  4:15:27 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:06  Checking assumptions in step 4..
+SBY  4:15:27 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:06  Checking assertions in step 4..
+SBY  4:15:28 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:08  Checking assumptions in step 5..
+SBY  4:15:28 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:08  Checking assertions in step 5..
+SBY  4:15:30 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:09  Checking assumptions in step 6..
+SBY  4:15:30 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:09  Checking assertions in step 6..
+SBY  4:15:31 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:11  Checking assumptions in step 7..
+SBY  4:15:32 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:12  Checking assertions in step 7..
+SBY  4:15:34 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:14  Checking assumptions in step 8..
+SBY  4:15:34 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:14  Checking assertions in step 8..
+SBY  4:15:36 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:16  Checking assumptions in step 9..
+SBY  4:15:36 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:16  Checking assertions in step 9..
+SBY  4:15:38 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:17  Checking assumptions in step 10..
+SBY  4:15:38 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:18  Checking assertions in step 10..
+SBY  4:15:40 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:19  Checking assumptions in step 11..
+SBY  4:15:40 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:20  Checking assertions in step 11..
+SBY  4:15:42 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:21  Checking assumptions in step 12..
+SBY  4:15:42 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:22  Checking assertions in step 12..
+SBY  4:15:44 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:24  Checking assumptions in step 13..
+SBY  4:15:44 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:24  Checking assertions in step 13..
+SBY  4:15:46 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:26  Checking assumptions in step 14..
+SBY  4:15:47 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:26  Checking assertions in step 14..
+SBY  4:15:49 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:28  Checking assumptions in step 15..
+SBY  4:15:53 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:32  Checking assertions in step 15..
+SBY  4:15:55 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:34  Checking assumptions in step 16..
+SBY  4:15:55 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:35  Checking assertions in step 16..
+SBY  4:15:57 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:37  Checking assumptions in step 17..
+SBY  4:15:58 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:37  Checking assertions in step 17..
+SBY  4:16:00 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:39  Checking assumptions in step 18..
+SBY  4:16:00 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:40  Checking assertions in step 18..
+SBY  4:16:03 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:42  Checking assumptions in step 19..
+SBY  4:16:03 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:43  Checking assertions in step 19..
+SBY  4:16:05 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:00:45  Checking assumptions in step 20..
+SBY  4:16:23 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:02  Checking assertions in step 20..
+SBY  4:16:25 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:04  Checking assumptions in step 21..
+SBY  4:16:25 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:05  Checking assertions in step 21..
+SBY  4:16:27 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:07  Checking assumptions in step 22..
+SBY  4:16:28 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:07  Checking assertions in step 22..
+SBY  4:16:31 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:10  Checking assumptions in step 23..
+SBY  4:16:31 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:11  Checking assertions in step 23..
+SBY  4:16:33 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:13  Checking assumptions in step 24..
+SBY  4:16:34 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:14  Checking assertions in step 24..
+SBY  4:16:36 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:16  Checking assumptions in step 25..
+SBY  4:16:45 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:25  Checking assertions in step 25..
+SBY  4:16:47 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:27  Checking assumptions in step 26..
+SBY  4:16:48 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:28  Checking assertions in step 26..
+SBY  4:16:50 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:30  Checking assumptions in step 27..
+SBY  4:17:05 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:01:45  Checking assertions in step 27..
+SBY  4:17:59 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:38  BMC failed!
+SBY  4:17:59 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:38  Value for anyconst cva6_lsu_formal.instr3 (cva6_lsu_formal.v:0.0-0.0): 19
+SBY  4:17:59 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:38  Value for anyconst cva6_lsu_formal.instr2 (cva6_lsu_formal.v:0.0-0.0): 2444861443
+SBY  4:17:59 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:38  Value for anyconst cva6_lsu_formal.instr1 (cva6_lsu_formal.v:0.0-0.0): 2349640739
+SBY  4:17:59 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:38  Value for anyconst cva6_lsu_formal.instr0 (cva6_lsu_formal.v:0.0-0.0): 1545839875
+SBY  4:17:59 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:38  Assert failed in cva6_lsu_formal: cva6_lsu_formal.v:206.16-208.68
+SBY  4:17:59 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:38  Writing trace to VCD file: engine_0/trace.vcd
+SBY  4:18:04 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:44  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:44  Writing trace to constraints file: engine_0/trace.smtc
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] engine_0: ##   0:02:45  Status: failed
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] engine_0: finished (returncode=1)
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] engine_0: Status returned by engine: FAIL
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] summary: Elapsed clock time [H:MM:SS (secs)]: 0:03:02 (182)
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] summary: Elapsed process time [H:MM:SS (secs)]: 0:03:14 (194)
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] summary: engine_0 (smtbmc boolector) returned FAIL
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] summary: counterexample trace: proofs_lsu_taskBMC30_ni_lsu/engine_0/trace.vcd
+SBY  4:18:05 [proofs_lsu_taskBMC30_ni_lsu] DONE (FAIL, rc=2)
+</system-out></testcase></testsuite></testsuites>

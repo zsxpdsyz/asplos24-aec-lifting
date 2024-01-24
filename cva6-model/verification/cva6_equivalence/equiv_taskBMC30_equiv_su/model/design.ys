@@ -1,0 +1,20 @@
+# running in equiv_taskBMC30_equiv_su/src/
+
+
+read -formal -DEXPOSE_STATE cva6_su_equiv.v
+read -formal -DEXPOSE_STATE store_unit.v
+read -formal -DEXPOSE_STATE store_buffer.v
+read -formal amo_buffer.v
+read -formal -DEXPOSE_STATE cva6_su_model.v
+prep -top store_unit_model_tb
+
+memory_nordff
+async2sync
+chformal -assume -early
+chformal -live -fair -cover -remove
+opt_clean
+setundef -anyseq
+opt -keepdc -fast
+check
+hierarchy -simcheck
+write_ilang ../model/design.il

@@ -1,0 +1,25 @@
+[options]
+mode bmc
+depth 30
+
+[engines]
+smtbmc boolector
+
+[script]
+
+
+read -formal -DEXPOSE_STATE cva6_su_equiv.v
+read -formal -DEXPOSE_STATE store_unit.v
+read -formal -DEXPOSE_STATE store_buffer.v
+read -formal amo_buffer.v
+read -formal -DEXPOSE_STATE cva6_su_model.v
+prep -top store_unit_model_tb
+
+[files]
+
+
+cva6_su_equiv.v
+store_unit.v
+store_buffer.v
+amo_buffer.v
+cva6_su_model.v

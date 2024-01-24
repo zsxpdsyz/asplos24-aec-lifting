@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="31">
+<testsuite disabled="0" errors="0" failures="0" name="sec" skipped="0" tests="1" time="31">
+<properties>
+<property name="os" value="posix"/>
+</properties>
+<testcase classname="sec" name="taskBMC20_sodor5_model_lb_u" status="PASS" time="31">
+<system-out>SBY  1:20:08 [sec_taskBMC20_sodor5_model_lb_u] Removing directory 'sec_taskBMC20_sodor5_model_lb_u'.
+SBY  1:20:08 [sec_taskBMC20_sodor5_model_lb_u] Copy 'sodor5_model_ilstype_full.v' to 'sec_taskBMC20_sodor5_model_lb_u/src/sodor5_model_ilstype_full.v'.
+SBY  1:20:08 [sec_taskBMC20_sodor5_model_lb_u] Copy 'sodor5_lb_unified_bmc.v' to 'sec_taskBMC20_sodor5_model_lb_u/src/sodor5_lb_unified_bmc.v'.
+SBY  1:20:08 [sec_taskBMC20_sodor5_model_lb_u] Copy 'SimpleDMem.v' to 'sec_taskBMC20_sodor5_model_lb_u/src/SimpleDMem.v'.
+SBY  1:20:08 [sec_taskBMC20_sodor5_model_lb_u] engine_0: smtbmc boolector
+SBY  1:20:08 [sec_taskBMC20_sodor5_model_lb_u] base: starting process &quot;cd sec_taskBMC20_sodor5_model_lb_u/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  1:20:09 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Replacing memory \regfile with list of registers. See sodor5_model_ilstype_full.v:1211, sodor5_model_ilstype_full.v:952
+SBY  1:20:09 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Replacing memory \instr_queue_valid with list of registers. See sodor5_model_ilstype_full.v:851, sodor5_model_ilstype_full.v:823
+SBY  1:20:09 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Replacing memory \instr_queue with list of registers. See sodor5_model_ilstype_full.v:850, sodor5_model_ilstype_full.v:822
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [31] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [30] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [29] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [28] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [27] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [26] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [25] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [24] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [23] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [22] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [21] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [20] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [19] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [18] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [17] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [16] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [15] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [14] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [13] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [12] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [11] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [10] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [9] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [8] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [7] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [6] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [5] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [4] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_if_reg_pc [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [31] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [30] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [29] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [28] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [27] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [26] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [25] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [24] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [23] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [22] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [21] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [20] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [19] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [18] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [17] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [16] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [15] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [14] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [13] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [12] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [11] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [10] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [9] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [8] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [7] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [6] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [5] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [4] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_pc [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [31] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [30] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [29] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [28] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [27] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [26] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [25] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [24] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [23] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [22] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [21] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [20] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [19] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [18] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [17] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [16] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [15] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [14] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [13] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [12] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [11] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [10] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [9] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [8] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [7] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [6] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [5] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [4] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_pc [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [31] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [30] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [29] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [28] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [27] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [26] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [25] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [24] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [23] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [22] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [21] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [20] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [19] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [18] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [17] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [16] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [15] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [14] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [13] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [12] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [11] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [10] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [9] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [8] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [7] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [6] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [5] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [4] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_pc [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [31] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [30] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [29] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [28] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [27] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [26] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [25] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [24] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [23] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [22] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [21] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [20] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [19] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [18] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [17] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [16] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [15] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [14] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [13] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [12] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [11] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [10] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [9] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [8] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [7] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [6] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [5] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [4] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_dec_reg_inst [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [31] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [30] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [29] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [28] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [27] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [26] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [25] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [24] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [23] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [22] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [21] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [20] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [19] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [18] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [17] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [16] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [15] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [14] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [13] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [12] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [11] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [10] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [9] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [8] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [7] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [6] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [5] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [4] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_exe_reg_inst [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [31] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [30] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [29] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [28] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [27] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [26] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [25] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [24] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [23] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [22] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [21] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [20] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [19] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [18] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [17] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [16] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [15] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [14] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [13] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [12] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [11] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [10] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [9] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [8] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [7] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [6] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [5] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [4] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\copy_mem_reg_inst [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [31] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [30] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [29] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [28] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [27] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [26] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [25] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [24] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [23] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [22] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [21] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [20] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [19] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [18] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [17] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [16] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [15] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [14] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [13] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [12] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [11] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [10] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [9] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [8] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [7] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [6] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [5] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [4] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_model.\buf__in_io_dmem_resp_bits_data [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_mem_typ2 [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_mem_typ2 [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_mem_typ2 [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_mem_fcn2 is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_alu_fun2 [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_alu_fun2 [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_alu_fun2 [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_alu_fun2 [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_mem_typ1 [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_mem_typ1 [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_mem_typ1 [0] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_mem_fcn1 is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_alu_fun1 [3] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_alu_fun1 [2] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_alu_fun1 [1] is used but has no driver.
+SBY  1:20:12 [sec_taskBMC20_sodor5_model_lb_u] base: Warning: Wire sodor5_verif.\de_io_port_alu_fun1 [0] is used but has no driver.
+SBY  1:20:15 [sec_taskBMC20_sodor5_model_lb_u] base: finished (returncode=0)
+SBY  1:20:15 [sec_taskBMC20_sodor5_model_lb_u] smt2: starting process &quot;cd sec_taskBMC20_sodor5_model_lb_u/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  1:20:15 [sec_taskBMC20_sodor5_model_lb_u] smt2: finished (returncode=0)
+SBY  1:20:15 [sec_taskBMC20_sodor5_model_lb_u] engine_0: starting process &quot;cd sec_taskBMC20_sodor5_model_lb_u; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY  1:20:16 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:00  Solver: boolector
+SBY  1:20:16 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY  1:20:16 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY  1:20:16 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY  1:20:16 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY  1:20:17 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:01  Checking assumptions in step 2..
+SBY  1:20:17 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:01  Checking assertions in step 2..
+SBY  1:20:17 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:01  Checking assumptions in step 3..
+SBY  1:20:18 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:01  Checking assertions in step 3..
+SBY  1:20:18 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:02  Checking assumptions in step 4..
+SBY  1:20:18 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:02  Checking assertions in step 4..
+SBY  1:20:19 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:02  Checking assumptions in step 5..
+SBY  1:20:19 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:02  Checking assertions in step 5..
+SBY  1:20:19 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:03  Checking assumptions in step 6..
+SBY  1:20:19 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:03  Checking assertions in step 6..
+SBY  1:20:20 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:04  Checking assumptions in step 7..
+SBY  1:20:20 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:04  Checking assertions in step 7..
+SBY  1:20:21 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:04  Checking assumptions in step 8..
+SBY  1:20:21 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:05  Checking assertions in step 8..
+SBY  1:20:21 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:05  Checking assumptions in step 9..
+SBY  1:20:21 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:05  Checking assertions in step 9..
+SBY  1:20:22 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:06  Checking assumptions in step 10..
+SBY  1:20:22 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:06  Checking assertions in step 10..
+SBY  1:20:23 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:07  Checking assumptions in step 11..
+SBY  1:20:23 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:07  Checking assertions in step 11..
+SBY  1:20:24 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:08  Checking assumptions in step 12..
+SBY  1:20:24 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:08  Checking assertions in step 12..
+SBY  1:20:25 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:09  Checking assumptions in step 13..
+SBY  1:20:25 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:09  Checking assertions in step 13..
+SBY  1:20:26 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:10  Checking assumptions in step 14..
+SBY  1:20:26 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:10  Checking assertions in step 14..
+SBY  1:20:27 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:11  Checking assumptions in step 15..
+SBY  1:20:27 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:11  Checking assertions in step 15..
+SBY  1:20:28 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:12  Checking assumptions in step 16..
+SBY  1:20:29 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:13  Checking assertions in step 16..
+SBY  1:20:30 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:14  Checking assumptions in step 17..
+SBY  1:20:31 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:15  Checking assertions in step 17..
+SBY  1:20:32 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:16  Checking assumptions in step 18..
+SBY  1:20:33 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:17  Checking assertions in step 18..
+SBY  1:20:34 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:18  Checking assumptions in step 19..
+SBY  1:20:36 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:19  Checking assertions in step 19..
+SBY  1:20:36 [sec_taskBMC20_sodor5_model_lb_u] engine_0: ##   0:00:20  Status: passed
+SBY  1:20:36 [sec_taskBMC20_sodor5_model_lb_u] engine_0: finished (returncode=0)
+SBY  1:20:36 [sec_taskBMC20_sodor5_model_lb_u] engine_0: Status returned by engine: pass
+SBY  1:20:36 [sec_taskBMC20_sodor5_model_lb_u] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:28 (28)
+SBY  1:20:36 [sec_taskBMC20_sodor5_model_lb_u] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:31 (31)
+SBY  1:20:36 [sec_taskBMC20_sodor5_model_lb_u] summary: engine_0 (smtbmc boolector) returned pass
+SBY  1:20:36 [sec_taskBMC20_sodor5_model_lb_u] DONE (PASS, rc=0)
+</system-out></testcase></testsuite></testsuites>

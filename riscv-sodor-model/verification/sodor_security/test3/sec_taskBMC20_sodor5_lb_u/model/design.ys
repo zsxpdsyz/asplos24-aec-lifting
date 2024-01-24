@@ -1,0 +1,16 @@
+# running in sec_taskBMC20_sodor5_lb_u/src/
+read -formal sodor5_dmem_top.v
+read -formal sodor5_lb_unified_bmc.v
+prep -top sodor5_verif
+
+
+memory_nordff
+async2sync
+chformal -assume -early
+chformal -live -fair -cover -remove
+opt_clean
+setundef -anyseq
+opt -keepdc -fast
+check
+hierarchy -simcheck
+write_ilang ../model/design.il

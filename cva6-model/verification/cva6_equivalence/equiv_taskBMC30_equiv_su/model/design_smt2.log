@@ -1,0 +1,200 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+4052 (git sha1 a58571d0, clang 6.0.0-1ubuntu2 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+3. Printing statistics.
+
+=== store_unit_model_tb ===
+
+   Number of wires:                106
+   Number of wire bits:           1398
+   Number of public wires:          50
+   Number of public wire bits:     995
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 77
+     $add                            1
+     $anyseq                         6
+     $assert                         1
+     $dff                           15
+     $eq                             4
+     $logic_and                      8
+     $logic_not                      5
+     $logic_or                       1
+     $lt                             1
+     $mux                           23
+     $ne                             1
+     $not                            3
+     $reduce_and                     2
+     $reduce_or                      3
+     $sub                            1
+     cva6_su_model                   1
+     store_unit                      1
+
+=== store_unit ===
+
+   Number of wires:                135
+   Number of wire bits:           1041
+   Number of public wires:          50
+   Number of public wire bits:     770
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                127
+     $and                            2
+     $anyseq                         6
+     $dff                            6
+     $eq                            43
+     $ge                             1
+     $le                             1
+     $logic_and                      4
+     $logic_not                      4
+     $mux                           30
+     $not                            1
+     $pmux                           8
+     $reduce_bool                    2
+     $reduce_or                     17
+     amo_buffer                      1
+     store_buffer                    1
+
+=== store_buffer ===
+
+   Number of wires:                235
+   Number of wire bits:          16398
+   Number of public wires:          47
+   Number of public wire bits:    1491
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                219
+     $add                           30
+     $and                           14
+     $anyseq                         2
+     $dff                            9
+     $eq                             9
+     $logic_and                      9
+     $logic_not                      4
+     $logic_or                       5
+     $lt                             9
+     $mul                            4
+     $mux                           71
+     $ne                             2
+     $not                            9
+     $or                             8
+     $reduce_or                      1
+     $shiftx                         7
+     $shl                           15
+     $sub                           11
+
+=== cva6_su_model ===
+
+   Number of wires:                170
+   Number of wire bits:           1152
+   Number of public wires:          23
+   Number of public wire bits:     234
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                162
+     $add                            3
+     $anyseq                        10
+     $dff                           13
+     $eq                            16
+     $logic_and                      5
+     $logic_not                      6
+     $logic_or                       4
+     $mux                           97
+     $pmux                           3
+     $reduce_bool                    5
+
+=== amo_buffer ===
+
+   Number of wires:                 17
+   Number of wire bits:            425
+   Number of public wires:          16
+   Number of public wire bits:     424
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and                            2
+
+=== design hierarchy ===
+
+   store_unit_model_tb               1
+     cva6_su_model                   1
+     store_unit                      1
+       amo_buffer                    1
+       store_buffer                  1
+
+   Number of wires:                663
+   Number of wire bits:          20414
+   Number of public wires:         186
+   Number of public wire bits:    3914
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                583
+     $add                           34
+     $and                           18
+     $anyseq                        24
+     $assert                         1
+     $dff                           43
+     $eq                            72
+     $ge                             1
+     $le                             1
+     $logic_and                     26
+     $logic_not                     19
+     $logic_or                      10
+     $lt                            10
+     $mul                            4
+     $mux                          221
+     $ne                             3
+     $not                           13
+     $or                             8
+     $pmux                          11
+     $reduce_and                     2
+     $reduce_bool                    7
+     $reduce_or                     21
+     $shiftx                         7
+     $shl                           15
+     $sub                           12
+
+4. Executing SMT2 backend.
+Creating SMT-LIBv2 representation of module amo_buffer.
+Creating SMT-LIBv2 representation of module cva6_su_model.
+Creating SMT-LIBv2 representation of module store_buffer.
+Creating SMT-LIBv2 representation of module store_unit.
+Creating SMT-LIBv2 representation of module store_unit_model_tb.
+
+End of script. Logfile hash: 4d3318f37a, CPU: user 0.13s system 0.00s, MEM: 13.55 MB peak
+Yosys 0.9+4052 (git sha1 a58571d0, clang 6.0.0-1ubuntu2 -fPIC -Os)
+Time spent: 80% 2x write_smt2 (0 sec), 17% 2x read_ilang (0 sec), ...

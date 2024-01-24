@@ -1,0 +1,40 @@
+[
+    {
+        "bad_txns": [
+            "gen_flush_all",
+            "gen_none"
+        ],
+        "iframe": {
+            "update": 4611686022722355200,
+            "flush": 0
+        }
+    },
+    {
+        "bad_txns": [
+            "gen_update"
+        ],
+        "iframe": {
+            "update": 0,
+            "flush": 0
+        }
+    },
+    {
+        "bad_txns": [
+            "gen_update"
+        ],
+        "iframe": {
+            "update": 0,
+            "flush": 1
+        }
+    },
+    {
+        "bad_txns": [
+            "gen_flush_all",
+            "gen_update"
+        ],
+        "iframe": {
+            "update": 0,
+            "flush": 0
+        }
+    }
+]

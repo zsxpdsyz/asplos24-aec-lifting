@@ -1,0 +1,344 @@
+initial
+assume (= [$formal$cva6_lsu_formal.v:173$14_EN] #b0)
+assume (= [$formal$cva6_lsu_formal.v:210$16_CHECK] #b0)
+assume (= [counter] #b000)
+assume (= [init] #b1)
+assume (= [local_ready_1] #b0)
+assume (= [local_ready_2] #b0)
+assume (= [pc_1] #b00000000000000000000000000000000)
+assume (= [pc_2] #b00000000000000000000000000000000)
+assume (= [reset] #b1)
+assume (= [shim_i_1.load_cooldown] #b000)
+assume (= [shim_i_1.loadstore_addr] #b00000000000000000000000000000000)
+assume (= [shim_i_1.loadstore_fsm] #b000)
+assume (= [shim_i_1.loadstore_state] #b0)
+assume (= [shim_i_1.lsu_shim_i.load_req_state] #b00)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.$auto$async2sync.cc:140:execute$12274] #b00000000000000000000000000000000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12264] #b00)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12266] #b0)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12268] #b0)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12270] #b0000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12272] #b0000000000000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_pipe_reg_load.$auto$async2sync.cc:140:execute$12284] #b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_pipe_reg_store.$auto$async2sync.cc:140:execute$12284] #b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12302] #b00)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12304] #b00000000000000000000000000000000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12306] #b0000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12308] #b00)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12310] #b0000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12312] #b000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12286] #b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12288] #b000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12290] #b00)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12292] #b00)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12294] #b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12296] #b000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12298] #b00)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12300] #b00)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.lsu_bypass_i.$auto$async2sync.cc:140:execute$12276] #b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.lsu_bypass_i.$auto$async2sync.cc:140:execute$12278] #b1)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.lsu_bypass_i.$auto$async2sync.cc:140:execute$12280] #b0)
+assume (= [shim_i_1.lsu_shim_i.lsu_i.lsu_bypass_i.$auto$async2sync.cc:140:execute$12282] #b10)
+assume (= [shim_i_1.lsu_shim_i.store_req_state] #b00)
+assume (= [shim_i_1.lsu_shim_i.tb_io_commit_tran_id_i] #b000)
+assume (= [shim_i_1.lsu_shim_i.tb_io_dcache_req_ports_i] #b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_1.lsu_shim_i.tb_io_fu_data_i] #b001100100111001111111111111111111111111111111100101011111110110010101111111000111111111111111111111111111111011)
+assume (= [shim_i_1.lsu_shim_i.tb_io_lsu_valid_i] false)
+assume (= [shim_i_1.lsu_shim_i.x_load_mem_resp_i] #b0)
+assume (= [shim_i_1.mem[0]] #b00001011100011111101011000000000)
+assume (= [shim_i_1.mem[10]] #b10001011110111110100011010010000)
+assume (= [shim_i_1.mem[11]] #b00001111110001010111011110010000)
+assume (= [shim_i_1.mem[12]] #b01001011110011010110111110000000)
+assume (= [shim_i_1.mem[13]] #b01011011111111110101011010000001)
+assume (= [shim_i_1.mem[14]] #b10001011111011110110011010010100)
+assume (= [shim_i_1.mem[15]] #b00101111100010110101010110010000)
+assume (= [shim_i_1.mem[16]] #b00001011100011010111000000001001)
+assume (= [shim_i_1.mem[17]] #b10001011110011000101101100110111)
+assume (= [shim_i_1.mem[18]] #b11101011110111110111100011010000)
+assume (= [shim_i_1.mem[19]] #b11001000110011110110001000010000)
+assume (= [shim_i_1.mem[1]] #b01101011110010110110001110000000)
+assume (= [shim_i_1.mem[20]] #b00101010110111110110001101110001)
+assume (= [shim_i_1.mem[21]] #b11001011110010010100111100010010)
+assume (= [shim_i_1.mem[22]] #b00101010111111110100000111010000)
+assume (= [shim_i_1.mem[23]] #b11101010010111110110000001111000)
+assume (= [shim_i_1.mem[24]] #b10001011110011110101111011000000)
+assume (= [shim_i_1.mem[25]] #b11000000000111000111110100000110)
+assume (= [shim_i_1.mem[26]] #b00101011110011100111100110000000)
+assume (= [shim_i_1.mem[27]] #b11101011111111110110001100000000)
+assume (= [shim_i_1.mem[28]] #b11101011100011110111010001011010)
+assume (= [shim_i_1.mem[29]] #b11001011100011010110110111010110)
+assume (= [shim_i_1.mem[2]] #b00001010011111110111101011110000)
+assume (= [shim_i_1.mem[30]] #b01011011111111110101100110000000)
+assume (= [shim_i_1.mem[31]] #b01001011100011110011111110000001)
+assume (= [shim_i_1.mem[3]] #b00001011100111011011011010011000)
+assume (= [shim_i_1.mem[4]] #b00010100100101001110000010000111)
+assume (= [shim_i_1.mem[5]] #b11101011100001010101010111000110)
+assume (= [shim_i_1.mem[6]] #b00101000111101110100111000010000)
+assume (= [shim_i_1.mem[7]] #b11101010110111110110000000101100)
+assume (= [shim_i_1.mem[8]] #b00101001100101010110001011010010)
+assume (= [shim_i_1.mem[9]] #b00101110100001010101011011010110)
+assume (= [shim_i_1.ready_o] #b0)
+assume (= [shim_i_1.regfile[0]] #b11011100100101010011111111100001)
+assume (= [shim_i_1.regfile[10]] #b00010100100101001101111101011111)
+assume (= [shim_i_1.regfile[11]] #b11101111111000000001001010101100)
+assume (= [shim_i_1.regfile[12]] #b01001100000111001111110010010010)
+assume (= [shim_i_1.regfile[13]] #b01010000000101000111100101100011)
+assume (= [shim_i_1.regfile[14]] #b11011100100101010011111111011011)
+assume (= [shim_i_1.regfile[15]] #b11101111111000000001011011011011)
+assume (= [shim_i_1.regfile[16]] #b11101111111000000001010011100111)
+assume (= [shim_i_1.regfile[17]] #b11101111111000000000101101010011)
+assume (= [shim_i_1.regfile[18]] #b11011100100101010100101111111011)
+assume (= [shim_i_1.regfile[19]] #b10001100011011000010110010001101)
+assume (= [shim_i_1.regfile[1]] #b00010100100101001110000011110000)
+assume (= [shim_i_1.regfile[20]] #b11011100100101010100000001110110)
+assume (= [shim_i_1.regfile[21]] #b11101111111000000001001010110110)
+assume (= [shim_i_1.regfile[22]] #b11101111111000000000101111010011)
+assume (= [shim_i_1.regfile[23]] #b11101111111000000001100110101110)
+assume (= [shim_i_1.regfile[24]] #b01010110101110000100100100010011)
+assume (= [shim_i_1.regfile[25]] #b11000110011100010000100100000100)
+assume (= [shim_i_1.regfile[26]] #b11101111111000000000101011010111)
+assume (= [shim_i_1.regfile[27]] #b11010100001100100111101010011001)
+assume (= [shim_i_1.regfile[28]] #b00010100100101001110100110010011)
+assume (= [shim_i_1.regfile[29]] #b11011100110101010110001101111011)
+assume (= [shim_i_1.regfile[2]] #b11000110110111011101111010110010)
+assume (= [shim_i_1.regfile[30]] #b11000111111010000010101101010001)
+assume (= [shim_i_1.regfile[31]] #b00010100100101001101110110000011)
+assume (= [shim_i_1.regfile[3]] #b11000111111011101110101111111110)
+assume (= [shim_i_1.regfile[4]] #b11001100001100100101101110011111)
+assume (= [shim_i_1.regfile[5]] #b11011100100101010100101101000001)
+assume (= [shim_i_1.regfile[6]] #b01001100001111100101111011011111)
+assume (= [shim_i_1.regfile[7]] #b00010100100101001110100000000110)
+assume (= [shim_i_1.regfile[8]] #b01001011111010111111101101111101)
+assume (= [shim_i_1.regfile[9]] #b11011100100101010100110000000101)
+assume (= [shim_i_1.store_cooldown] #b0)
+assume (= [shim_i_1.store_count] #b000)
+assume (= [shim_i_1.store_uncommitted] #b0)
+assume (= [shim_i_1.tb_io_instr_i] #b00000000000000000000000000000000)
+assume (= [shim_i_1.tb_io_instr_valid_i] false)
+assume (= [shim_i_1.tb_io_is_load_i] false)
+assume (= [shim_i_1.tb_io_load_mem_resp_i] #b0)
+assume (= [shim_i_1.tb_io_store_commit_i] #b0)
+assume (= [shim_i_1.tb_io_store_mem_resp_i] #b0)
+assume (= [shim_i_2.load_cooldown] #b000)
+assume (= [shim_i_2.loadstore_addr] #b00000000000000000000000000000000)
+assume (= [shim_i_2.loadstore_fsm] #b000)
+assume (= [shim_i_2.loadstore_state] #b0)
+assume (= [shim_i_2.lsu_shim_i.load_req_state] #b00)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.$auto$async2sync.cc:140:execute$12274] #b00000000000000000000000000000000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12264] #b00)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12266] #b0)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12268] #b0)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12270] #b0000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_load_unit.$auto$async2sync.cc:140:execute$12272] #b0000000000000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_pipe_reg_load.$auto$async2sync.cc:140:execute$12284] #b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_pipe_reg_store.$auto$async2sync.cc:140:execute$12284] #b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12302] #b00)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12304] #b00000000000000000000000000000000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12306] #b0000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12308] #b00)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12310] #b0000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.$auto$async2sync.cc:140:execute$12312] #b000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12286] #b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12288] #b000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12290] #b00)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12292] #b00)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12294] #b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12296] #b000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12298] #b00)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.i_store_unit.store_buffer_i.$auto$async2sync.cc:140:execute$12300] #b00)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.lsu_bypass_i.$auto$async2sync.cc:140:execute$12276] #b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.lsu_bypass_i.$auto$async2sync.cc:140:execute$12278] #b1)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.lsu_bypass_i.$auto$async2sync.cc:140:execute$12280] #b0)
+assume (= [shim_i_2.lsu_shim_i.lsu_i.lsu_bypass_i.$auto$async2sync.cc:140:execute$12282] #b10)
+assume (= [shim_i_2.lsu_shim_i.store_req_state] #b00)
+assume (= [shim_i_2.lsu_shim_i.tb_io_commit_tran_id_i] #b000)
+assume (= [shim_i_2.lsu_shim_i.tb_io_dcache_req_ports_i] #b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [shim_i_2.lsu_shim_i.tb_io_fu_data_i] #b001100100111001111111111111111111111111111111100101011111110110010101111111000111111111111111111111111111111011)
+assume (= [shim_i_2.lsu_shim_i.tb_io_lsu_valid_i] false)
+assume (= [shim_i_2.lsu_shim_i.x_load_mem_resp_i] #b0)
+assume (= [shim_i_2.mem[0]] #b10100111110111011111110011110100)
+assume (= [shim_i_2.mem[10]] #b10101111110100001000011001111100)
+assume (= [shim_i_2.mem[11]] #b11100010110111111111111011111001)
+assume (= [shim_i_2.mem[12]] #b00100011110100001000001101111010)
+assume (= [shim_i_2.mem[13]] #b11110110000011000010100001111110)
+assume (= [shim_i_2.mem[14]] #b10100111110111101111010011110110)
+assume (= [shim_i_2.mem[15]] #b10100101110101101001101111110010)
+assume (= [shim_i_2.mem[16]] #b10100110110111011111000010110001)
+assume (= [shim_i_2.mem[17]] #b10001111000100001011101111011100)
+assume (= [shim_i_2.mem[18]] #b11101011100011110001001101011001)
+assume (= [shim_i_2.mem[19]] #b11001111111111111111000100011100)
+assume (= [shim_i_2.mem[1]] #b00010100100101001110000010000111)
+assume (= [shim_i_2.mem[20]] #b10100110000000001001000101111100)
+assume (= [shim_i_2.mem[21]] #b11001101110000101111100110011100)
+assume (= [shim_i_2.mem[22]] #b10101111110111111111100101111100)
+assume (= [shim_i_2.mem[23]] #b10100110000000000000001001111111)
+assume (= [shim_i_2.mem[24]] #b11101111110111110110011011110001)
+assume (= [shim_i_2.mem[25]] #b10101111110011110000100111110011)
+assume (= [shim_i_2.mem[26]] #b10101111111111011100111111111101)
+assume (= [shim_i_2.mem[27]] #b01001111110111111011001101111100)
+assume (= [shim_i_2.mem[28]] #b10110101000110111011010101111011)
+assume (= [shim_i_2.mem[29]] #b10100001110100001000100011111100)
+assume (= [shim_i_2.mem[2]] #b01010100110111111110011101110010)
+assume (= [shim_i_2.mem[30]] #b11110110000011000010101101111101)
+assume (= [shim_i_2.mem[31]] #b10101111111111111111000111111100)
+assume (= [shim_i_2.mem[3]] #b01001111110101101000000111110111)
+assume (= [shim_i_2.mem[4]] #b11011101000001000001111111110111)
+assume (= [shim_i_2.mem[5]] #b10100111110100001000010011111101)
+assume (= [shim_i_2.mem[6]] #b00100011110111001110110010011100)
+assume (= [shim_i_2.mem[7]] #b00100000000001000000001001111011)
+assume (= [shim_i_2.mem[8]] #b10000111100100011001011011111001)
+assume (= [shim_i_2.mem[9]] #b00010011110100101001000001110001)
+assume (= [shim_i_2.ready_o] #b0)
+assume (= [shim_i_2.regfile[0]] #b11011100100101010011111111100001)
+assume (= [shim_i_2.regfile[10]] #b00010100100101001101111101011111)
+assume (= [shim_i_2.regfile[11]] #b11101111111000000001001010101100)
+assume (= [shim_i_2.regfile[12]] #b01001100000111001111110010010010)
+assume (= [shim_i_2.regfile[13]] #b01010000000101000111100101100011)
+assume (= [shim_i_2.regfile[14]] #b11011100100101010011111111011011)
+assume (= [shim_i_2.regfile[15]] #b11101111111000000001011011011011)
+assume (= [shim_i_2.regfile[16]] #b11101111111000000001010011100111)
+assume (= [shim_i_2.regfile[17]] #b11101111111000000000101101010011)
+assume (= [shim_i_2.regfile[18]] #b11011100100101010100101111111011)
+assume (= [shim_i_2.regfile[19]] #b10001100011011000010110010001101)
+assume (= [shim_i_2.regfile[1]] #b00010100100101001110000011110000)
+assume (= [shim_i_2.regfile[20]] #b11011100100101010100000001110110)
+assume (= [shim_i_2.regfile[21]] #b11101111111000000001001010110110)
+assume (= [shim_i_2.regfile[22]] #b11101111111000000000101111010011)
+assume (= [shim_i_2.regfile[23]] #b11101111111000000001100110101110)
+assume (= [shim_i_2.regfile[24]] #b01010110101110000100100100010011)
+assume (= [shim_i_2.regfile[25]] #b11000110011100010000100100000100)
+assume (= [shim_i_2.regfile[26]] #b11101111111000000000101011010111)
+assume (= [shim_i_2.regfile[27]] #b11010100001100100111101010011001)
+assume (= [shim_i_2.regfile[28]] #b00010100100101001110100110010011)
+assume (= [shim_i_2.regfile[29]] #b11011100110101010110001101111011)
+assume (= [shim_i_2.regfile[2]] #b11000110110111011101111010110010)
+assume (= [shim_i_2.regfile[30]] #b11000111111010000010101101010001)
+assume (= [shim_i_2.regfile[31]] #b00010100100101001101110110000011)
+assume (= [shim_i_2.regfile[3]] #b11000111111011101110101111111110)
+assume (= [shim_i_2.regfile[4]] #b11001100001100100101101110011111)
+assume (= [shim_i_2.regfile[5]] #b11011100100101010100101101000001)
+assume (= [shim_i_2.regfile[6]] #b01001100001111100101111011011111)
+assume (= [shim_i_2.regfile[7]] #b00010100100101001110100000000110)
+assume (= [shim_i_2.regfile[8]] #b01001011111010111111101101111101)
+assume (= [shim_i_2.regfile[9]] #b11011100100101010100110000000101)
+assume (= [shim_i_2.store_cooldown] #b0)
+assume (= [shim_i_2.store_count] #b000)
+assume (= [shim_i_2.store_uncommitted] #b0)
+assume (= [shim_i_2.tb_io_instr_i] #b00000000000000000000000000000000)
+assume (= [shim_i_2.tb_io_instr_valid_i] false)
+assume (= [shim_i_2.tb_io_is_load_i] false)
+assume (= [shim_i_2.tb_io_load_mem_resp_i] #b0)
+assume (= [shim_i_2.tb_io_store_commit_i] #b0)
+assume (= [shim_i_2.tb_io_store_mem_resp_i] #b0)
+assume (= [tb_io_instr_i_1] #b01000000001110011101100110000011)
+assume (= [tb_io_instr_i_2] #b11100010010000000000100110000011)
+assume (= [tb_io_instr_valid_i_1] true)
+assume (= [tb_io_instr_valid_i_2] true)
+
+state 0
+assume (= [clk] false)
+
+state 1
+assume (= [clk] false)
+
+state 2
+assume (= [clk] false)
+
+state 3
+assume (= [clk] false)
+
+state 4
+assume (= [clk] false)
+
+state 5
+assume (= [clk] false)
+
+state 6
+assume (= [clk] false)
+
+state 7
+assume (= [clk] false)
+
+state 8
+assume (= [clk] false)
+
+state 9
+assume (= [clk] false)
+
+state 10
+assume (= [clk] false)
+
+state 11
+assume (= [clk] false)
+
+state 12
+assume (= [clk] false)
+
+state 13
+assume (= [clk] false)
+
+state 14
+assume (= [clk] false)
+
+state 15
+assume (= [clk] false)
+
+state 16
+assume (= [clk] false)
+
+state 17
+assume (= [clk] false)
+
+state 18
+assume (= [clk] false)
+
+state 19
+assume (= [clk] false)
+
+state 20
+assume (= [clk] false)
+
+state 21
+assume (= [clk] false)
+
+state 22
+assume (= [clk] false)
+
+state 23
+assume (= [clk] false)
+
+state 24
+assume (= [clk] false)
+
+state 25
+assume (= [clk] false)
+
+state 26
+assume (= [clk] false)
+
+state 27
+assume (= [clk] false)
+
+state 28
+assume (= [clk] false)
+
+state 29
+assume (= [clk] false)
+
+state 30
+assume (= [clk] false)
+
+state 31
+assume (= [clk] false)
+
+state 32
+assume (= [clk] false)
+
+state 33
+assume (= [clk] false)
+
+state 34
+assume (= [clk] false)
+
+state 35
+assume (= [clk] false)

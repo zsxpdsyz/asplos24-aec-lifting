@@ -1,0 +1,89 @@
+SBY  1:09:16 [sec_taskBMC20_sodor5_lb_u] Removing directory 'sec_taskBMC20_sodor5_lb_u'.
+SBY  1:09:16 [sec_taskBMC20_sodor5_lb_u] Copy 'sodor5_dmem_top.v' to 'sec_taskBMC20_sodor5_lb_u/src/sodor5_dmem_top.v'.
+SBY  1:09:16 [sec_taskBMC20_sodor5_lb_u] Copy 'sodor5_lb_unified_bmc.v' to 'sec_taskBMC20_sodor5_lb_u/src/sodor5_lb_unified_bmc.v'.
+SBY  1:09:16 [sec_taskBMC20_sodor5_lb_u] engine_0: smtbmc boolector
+SBY  1:09:16 [sec_taskBMC20_sodor5_lb_u] base: starting process "cd sec_taskBMC20_sodor5_lb_u/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [31] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [30] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [29] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [28] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [27] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [26] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [25] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [24] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [23] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [22] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [21] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [20] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [19] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [18] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [17] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [16] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [15] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [14] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [13] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [12] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [11] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [10] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [9] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [8] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [7] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [6] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [5] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [4] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [3] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [2] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [1] is used but has no driver.
+SBY  1:09:24 [sec_taskBMC20_sodor5_lb_u] base: Warning: Wire CoreTop.\fe_in_io_dmem_resp_bits_data_uc [0] is used but has no driver.
+SBY  1:09:41 [sec_taskBMC20_sodor5_lb_u] base: finished (returncode=0)
+SBY  1:09:41 [sec_taskBMC20_sodor5_lb_u] smt2: starting process "cd sec_taskBMC20_sodor5_lb_u/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  1:09:44 [sec_taskBMC20_sodor5_lb_u] smt2: finished (returncode=0)
+SBY  1:09:44 [sec_taskBMC20_sodor5_lb_u] engine_0: starting process "cd sec_taskBMC20_sodor5_lb_u; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  1:09:44 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:00  Solver: boolector
+SBY  1:09:54 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:09  Checking assumptions in step 0..
+SBY  1:09:54 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:10  Checking assertions in step 0..
+SBY  1:10:07 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:23  Checking assumptions in step 1..
+SBY  1:10:08 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:23  Checking assertions in step 1..
+SBY  1:10:19 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:35  Checking assumptions in step 2..
+SBY  1:10:20 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:35  Checking assertions in step 2..
+SBY  1:10:32 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:47  Checking assumptions in step 3..
+SBY  1:10:32 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:00:48  Checking assertions in step 3..
+SBY  1:10:44 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:01:00  Checking assumptions in step 4..
+SBY  1:10:45 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:01:01  Checking assertions in step 4..
+SBY  1:10:58 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:01:14  Checking assumptions in step 5..
+SBY  1:10:59 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:01:15  Checking assertions in step 5..
+SBY  1:11:12 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:01:28  Checking assumptions in step 6..
+SBY  1:11:13 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:01:29  Checking assertions in step 6..
+SBY  1:11:36 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:01:51  Checking assumptions in step 7..
+SBY  1:11:38 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:01:53  Checking assertions in step 7..
+SBY  1:11:56 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:02:12  Checking assumptions in step 8..
+SBY  1:11:59 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:02:14  Checking assertions in step 8..
+SBY  1:12:18 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:02:34  Checking assumptions in step 9..
+SBY  1:12:21 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:02:36  Checking assertions in step 9..
+SBY  1:12:41 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:02:57  Checking assumptions in step 10..
+SBY  1:12:44 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:03:00  Checking assertions in step 10..
+SBY  1:13:05 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:03:20  Checking assumptions in step 11..
+SBY  1:13:09 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:03:25  Checking assertions in step 11..
+SBY  1:13:30 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:03:46  Checking assumptions in step 12..
+SBY  1:13:36 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:03:52  Checking assertions in step 12..
+SBY  1:13:58 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:04:13  Checking assumptions in step 13..
+SBY  1:14:06 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:04:21  Checking assertions in step 13..
+SBY  1:14:39 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:04:54  Checking assumptions in step 14..
+SBY  1:14:51 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:05:06  Checking assertions in step 14..
+SBY  1:15:13 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:05:28  Checking assumptions in step 15..
+SBY  1:15:26 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:05:42  Checking assertions in step 15..
+SBY  1:15:49 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:06:05  Checking assumptions in step 16..
+SBY  1:16:22 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:06:37  Checking assertions in step 16..
+SBY  1:17:14 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:07:30  Checking assumptions in step 17..
+SBY  1:17:47 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:08:02  Checking assertions in step 17..
+SBY  1:18:19 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:08:34  Checking assumptions in step 18..
+SBY  1:18:54 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:09:09  Checking assertions in step 18..
+SBY  1:19:18 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:09:34  Checking assumptions in step 19..
+SBY  1:19:47 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:10:02  Checking assertions in step 19..
+SBY  1:20:07 [sec_taskBMC20_sodor5_lb_u] engine_0: ##   0:10:23  Status: passed
+SBY  1:20:08 [sec_taskBMC20_sodor5_lb_u] engine_0: finished (returncode=0)
+SBY  1:20:08 [sec_taskBMC20_sodor5_lb_u] engine_0: Status returned by engine: pass
+SBY  1:20:08 [sec_taskBMC20_sodor5_lb_u] summary: Elapsed clock time [H:MM:SS (secs)]: 0:10:51 (651)
+SBY  1:20:08 [sec_taskBMC20_sodor5_lb_u] summary: Elapsed process time [H:MM:SS (secs)]: 0:12:13 (733)
+SBY  1:20:08 [sec_taskBMC20_sodor5_lb_u] summary: engine_0 (smtbmc boolector) returned pass
+SBY  1:20:08 [sec_taskBMC20_sodor5_lb_u] DONE (PASS, rc=0)

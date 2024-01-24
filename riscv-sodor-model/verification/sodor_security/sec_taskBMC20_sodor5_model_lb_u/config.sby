@@ -1,0 +1,21 @@
+[options]
+mode bmc
+depth 20
+
+
+[engines]
+smtbmc boolector
+
+
+[script]
+
+read -formal -DLB_VERIF -DRANDOMIZE -DDATAOPT sodor5_model_ilstype_full.v
+read -formal -DMODEL sodor5_lb_unified_bmc.v
+read_verilog -formal -DSODOR5_SIGNALS SimpleDMem.v
+prep -top sodor5_verif
+
+[files]
+
+sodor5_model_ilstype_full.v
+sodor5_lb_unified_bmc.v
+SimpleDMem.v

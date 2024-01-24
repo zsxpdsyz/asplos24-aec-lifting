@@ -1,0 +1,167 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+4052 (git sha1 a58571d0, clang 6.0.0-1ubuntu2 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+3. Printing statistics.
+
+=== cva6_processor_shim ===
+
+   Number of wires:                958
+   Number of wire bits:          16887
+   Number of public wires:          95
+   Number of public wire bits:    4255
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                943
+     $add                            4
+     $and                            1
+     $anyseq                       112
+     $dff                           79
+     $eq                           138
+     $logic_and                      4
+     $logic_not                     10
+     $lt                             2
+     $mux                          232
+     $ne                            71
+     $not                           39
+     $or                             1
+     $pmux                          98
+     $reduce_and                    70
+     $reduce_bool                    9
+     $reduce_or                     65
+     $shl                            1
+     $shr                            2
+     $sub                            3
+     $xor                            1
+     cva6_lsu_model                  1
+
+=== cva6_lsu_model ===
+
+   Number of wires:                265
+   Number of wire bits:           2153
+   Number of public wires:          40
+   Number of public wire bits:     346
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                254
+     $add                            5
+     $anyseq                        23
+     $dff                           28
+     $eq                            12
+     $ge                             2
+     $logic_and                      2
+     $logic_not                      5
+     $logic_or                       4
+     $mux                          160
+     $ne                             4
+     $not                            2
+     $pmux                           5
+     $reduce_bool                    2
+
+=== cva6_lsu_formal ===
+
+   Number of wires:                161
+   Number of wire bits:           5373
+   Number of public wires:          38
+   Number of public wire bits:    4566
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                153
+     $add                            3
+     $anyconst                       4
+     $anyseq                        22
+     $assert                         1
+     $assume                         8
+     $dff                           13
+     $eq                            23
+     $gt                             1
+     $le                             1
+     $logic_and                     14
+     $logic_not                      8
+     $logic_or                       3
+     $lt                             2
+     $mux                           44
+     $pmux                           2
+     $reduce_and                     2
+     cva6_processor_shim             2
+
+=== design hierarchy ===
+
+   cva6_lsu_formal                   1
+     cva6_processor_shim             2
+       cva6_lsu_model                1
+
+   Number of wires:               2607
+   Number of wire bits:          43453
+   Number of public wires:         308
+   Number of public wire bits:   13768
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2543
+     $add                           21
+     $and                            2
+     $anyconst                       4
+     $anyseq                       292
+     $assert                         1
+     $assume                         8
+     $dff                          227
+     $eq                           323
+     $ge                             4
+     $gt                             1
+     $le                             1
+     $logic_and                     26
+     $logic_not                     38
+     $logic_or                      11
+     $lt                             6
+     $mux                          828
+     $ne                           150
+     $not                           82
+     $or                             2
+     $pmux                         208
+     $reduce_and                   142
+     $reduce_bool                   22
+     $reduce_or                    130
+     $shl                            2
+     $shr                            4
+     $sub                            6
+     $xor                            2
+
+4. Executing SMT2 backend.
+Creating SMT-LIBv2 representation of module cva6_lsu_model.
+Creating SMT-LIBv2 representation of module cva6_processor_shim.
+Creating SMT-LIBv2 representation of module cva6_lsu_formal.
+
+End of script. Logfile hash: 2e8a6f810f, CPU: user 0.18s system 0.02s, MEM: 15.86 MB peak
+Yosys 0.9+4052 (git sha1 a58571d0, clang 6.0.0-1ubuntu2 -fPIC -Os)
+Time spent: 75% 2x write_smt2 (0 sec), 19% 2x read_ilang (0 sec), ...
