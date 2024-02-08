@@ -51,8 +51,8 @@ def get_model():
 
     # Change directory to the equivalence proof directory
     cdir = os.getcwd()
-    os.chdir("cva6-model/verification/lsu")
-    os.system("time sby -f proofs_lsu.sby taskBMC12_equiv_su")
+    os.chdir("cva6-model/verification/cva6_equivalence")
+    os.system("time sby -f equiv.sby taskBMC15_equiv_su")
     os.chdir(cdir)
     log_timestamp("equiv_proof", CURR_TIME)
 

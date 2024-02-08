@@ -63,8 +63,8 @@ def gen_model():
     '''
     # Change directory to the equivalence proof directory
     cdir = os.getcwd()
-    os.chdir("cva6-model/verification/tlb")
-    os.system("time sby -f proofs_tlb.sby taskBMC15_equiv_tlb")
+    os.chdir("cva6-model/verification/cva6_equivalence")
+    os.system("time sby -f equiv.sby taskBMC15_equiv_tlb")
     os.chdir(cdir)
     log_timestamp("equiv_proof", CURR_TIME)
 

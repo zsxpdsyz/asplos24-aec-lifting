@@ -19,8 +19,7 @@ depth 30
 
 [engines]
 task_bmc15:
-mode bmc
-depth 15
+smtbmc boolector
 --
 
 task_bmc30:
