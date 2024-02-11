@@ -145,7 +145,9 @@ module cva6_lsu_model_tb (
 
                 if (((de_io_ready_o && mo_io_ready_o) || load_state) && choice) begin
                     if (!load_state && (de_io_ready_o && mo_io_ready_o)) begin
+`ifndef FORMAL
                         $display("load @ addr: %h", addr);
+`endif
                         tb_io_instr_i = addr;
                         tb_io_is_load_i = 1;
                         tb_io_instr_valid_i = 1;
@@ -162,7 +164,9 @@ module cva6_lsu_model_tb (
                 end else begin
                     if (!store_state && (de_io_ready_o && mo_io_ready_o)) begin
                         // if (!load_state) begin
+`ifndef FORMAL
                             $display("store @ addr: %h", addr);
+`endif
                             tb_io_instr_i = addr;
                             tb_io_is_load_i = 0;
                             tb_io_instr_valid_i = 1;

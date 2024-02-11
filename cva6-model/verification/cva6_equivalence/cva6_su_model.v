@@ -121,7 +121,9 @@ module cva6_su_model (
         
             if (inner_instr_valid_i) begin
                 if (store_instr_queue_state[queue_store_ptr] != 0) begin
+`ifndef FORMAL
                     $display("Store blocked!");
+`endif 
                 end else begin
                     store_instr_i_queue[queue_store_ptr] <= inner_instr_i;
                     store_instr_i_queue_pc[queue_store_ptr] <= instr_i_pc;
@@ -134,9 +136,13 @@ module cva6_su_model (
             // Using the context
             if (store_mem_resp_i) begin
                 if (store_instr_queue_state[queue_serve_ptr] == 0) begin
+`ifndef FORMAL
                     $display("Store not found! %d", CLK_CYCLE);
+`endif 
                 end else if (store_instr_queue_state[queue_serve_ptr] == 3) begin
+`ifndef FORMAL
                     $display("Store uncommitted! %d", CLK_CYCLE);
+`endif
                 end else begin
                     store_instr_queue_state[queue_serve_ptr] <= 0;
                     queue_serve_ptr <= queue_serve_ptr + 1;
@@ -145,9 +151,13 @@ module cva6_su_model (
 
             if (commit_i) begin
                 if (store_instr_queue_state[queue_commit_ptr] == 0) begin
+`ifndef FORMAL
                     $display("Store not found! %d", CLK_CYCLE);
+`endif 
                 end else if (store_instr_queue_state[queue_commit_ptr] == 1) begin
+`ifndef FORMAL
                     $display("Store already committed! %d", CLK_CYCLE);
+`endif 
                 end else begin
                     store_instr_queue_state[queue_commit_ptr] <= 1;
                     queue_commit_ptr <= queue_commit_ptr + 1;
