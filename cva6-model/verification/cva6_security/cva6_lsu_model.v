@@ -140,7 +140,9 @@ module cva6_lsu_model (
             // Building the context        
             if (x_inner_instr_valid_i && !x_inner_is_load_i) begin
                 if (store_instr_queue_state[queue_store_ptr] != 0) begin
+`ifndef FORMAL
                     $display("Store blocked!");
+`endif
                 end else begin
                     store_instr_i_queue[queue_store_ptr] <= x_inner_instr_i;
                     store_instr_i_queue_pc[queue_store_ptr] <= instr_i_pc;
@@ -152,7 +154,9 @@ module cva6_lsu_model (
             
             if (inner_instr_valid_i && inner_is_load_i) begin
                 if (load_instr_queue_state != 0) begin
+`ifndef FORMAL
                     $display("Load blocked!");
+`endif
                 end else begin
                     load_instr_i_queue <= inner_instr_i;
                     load_instr_i_queue_pc <= instr_i_pc;
@@ -170,9 +174,13 @@ module cva6_lsu_model (
                 end
             end else if (inner_load_mem_resp_i) begin
                 if (load_instr_queue_state == 0) begin
+`ifndef FORMAL
                     $display("Load not found!");
+`endif
                 end else begin
+`ifndef FORMAL
                     $display("Load resp acquired!");
+`endif
                         ready_flag <= 1;
                         load_instr_queue_state <= 2;
                 end
@@ -191,7 +199,9 @@ module cva6_lsu_model (
             // Using the context
             if (inner_store_mem_resp_i) begin
                 if (store_instr_queue_state[queue_serve_ptr] != 1) begin
+`ifndef FORMAL
                     $display("Store not ready for commit! %d", CLK_CYCLE);
+`endif 
                 end else begin
                     store_instr_queue_state[queue_serve_ptr] <= 0;
                     queue_serve_ptr <= queue_serve_ptr + 1;
@@ -200,7 +210,9 @@ module cva6_lsu_model (
 
             if (store_commit_i) begin
                 if (store_instr_queue_state[queue_commit_ptr] != 3) begin
+`ifndef FORMAL
                     $display("Store not uncommited! %d", CLK_CYCLE);
+`endif
                 end else begin
                     store_instr_queue_state[queue_commit_ptr] <= 1;
                     queue_commit_ptr <= queue_commit_ptr + 1;

@@ -311,7 +311,9 @@ wire [134:0] de_io_amo_req_o;
             tb_io_dcache_req_ports_i[69:35] = {load_mem_resp_i, x_load_mem_resp_i, dummy_data, 1'd0};
         
             if (store_mem_resp_i) begin
+`ifndef FORMAL
                 $display("store_mem_resp_i");
+`endif 
                 serve_store_1();
             end else begin
                 serve_store_2();
@@ -335,11 +337,15 @@ wire [134:0] de_io_amo_req_o;
 
             if (instr_valid_i) begin
                 if (!is_load_i) begin
+`ifndef FORMAL
                     $display("store request");
+`endif
                     raise_store_request(instr_i, 32'hcafecafe, 2);
                     store_req_state = 2'd1;
                 end else if (is_load_i) begin
+`ifndef FORMAL
                     $display("load request");
+`endif 
                     raise_load_request(instr_i, 1);
                     load_req_state = 2'd1;
                 end
