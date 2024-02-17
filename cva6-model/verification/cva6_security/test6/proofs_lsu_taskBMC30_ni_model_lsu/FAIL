@@ -1,4 +1,0 @@
-Elapsed clock time [H:MM:SS (secs)]: 0:00:40 (40)
-Elapsed process time [H:MM:SS (secs)]: 0:00:45 (45)
-engine_0 (smtbmc boolector) returned FAIL
-counterexample trace: proofs_lsu_taskBMC30_ni_model_lsu/engine_0/trace.vcd

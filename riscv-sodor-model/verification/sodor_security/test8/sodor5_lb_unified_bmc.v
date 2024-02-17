@@ -66,7 +66,7 @@ module sodor5_verif(
     assign in_io_imem_resp_bits_data2 = program_array[de_io_port_pc2[5:2]];
 `else
     assign in_io_imem_resp_bits_data1 = program_array[de_io_imem_req_bits_addr1[5:2]];
-    assign in_io_imem_resp_bits_data2 = program_array[de_io_imem_req_bits_addr2[5:2]];
+    assign in_io_imem_resp_bits_data2 = program_array[de_io_imem_req_bits_addr2[4:2]];
 `endif
 
     // Design signals
@@ -156,9 +156,9 @@ module sodor5_verif(
         // prev_instr2 <= in_io_imem_resp_bits_data2;
 
 `ifdef FORMAL
-        // if (counter == 2 && init) begin
-        //     assume(de_io_port_regfile1 == de_io_port_regfile2);
-        // end
+        if (counter == 2 && init) begin
+            assume(de_io_port_regfile1 == de_io_port_regfile2);
+        end
 
         if (counter == 14) begin
             assert(!lb_diverge);
@@ -226,8 +226,7 @@ module sodor5_verif(
     wire lb_diverge;
     assign lb_diverge = (de_io_port_lb_table_valid1 ^ de_io_port_lb_table_valid2) || 
         ((de_io_port_lb_table_valid1 && de_io_port_lb_table_valid2) && (de_io_port_lb_table_addr1 != de_io_port_lb_table_addr2)) 
-        // || ((de_io_port_lb_table_valid1 && de_io_port_lb_table_valid2) && (de_io_port_lb_table_data1 != de_io_port_lb_table_data2))
-        ;
+        || ((de_io_port_lb_table_valid1 && de_io_port_lb_table_valid2) && (de_io_port_lb_table_data1 != de_io_port_lb_table_data2));
 
 `ifdef MODEL
     sodor5_model model1 (
